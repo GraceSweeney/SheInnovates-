@@ -1,0 +1,41 @@
+body 
+{
+    background-color: #74ce77;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+}
+
+.container 
+{
+    padding: 20px;
+}
+
+button 
+{
+    background-color: #c3dfc4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 0.7;
+    border-radius: 50px;
+    margin-top: 20px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash
+{
+    0% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.5;
+    }
+}
+
+#piggy, #bank
+{
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
