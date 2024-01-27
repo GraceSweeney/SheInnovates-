@@ -1,2 +1,2 @@
 # SheInnovates-
-Project for sheinnovates
+Financial Wellness Project for SheInnovates
