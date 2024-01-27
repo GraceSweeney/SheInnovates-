@@ -128,10 +128,10 @@ document.addEventListener("DOMContentLoaded", function() {
         answerButtonB.disabled = true;
 
         setTimeout(() => {
-            answerButtonA.style.backgroundColor = ''; // reset button A color
-            answerButtonB.style.backgroundColor = ''; // reset button B color
-            answerButtonA.disabled = false; // enable button A again
-            answerButtonB.disabled = false; // enable button B again
+            answerButtonA.style.backgroundColor = ''; 
+            answerButtonB.style.backgroundColor = ''; 
+            answerButtonA.disabled = false; 
+            answerButtonB.disabled = false;
     
 
         currentQuestionIndex++;
