@@ -18,7 +18,7 @@ body {
     margin-bottom: 0;
 }
 
-#pic2, #pic1 {
+#pic2{
     max-width: 100%;
     height: auto;
     margin: 20px auto;
@@ -26,17 +26,6 @@ body {
 
 @media (min-width: 600px) 
 {
-    #pic1
-    {
-        width: 200px;
-        height: 200px;
-        margin-left: 80px;
-        margin-top: 150px;
-        position: absolute;
-        left: 300px;
-        top: -50px;
-    }
-
     #questionText
     {
         position: absolute;
