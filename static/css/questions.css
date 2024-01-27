@@ -1,79 +1,97 @@
-body
-{
+body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color:#74ce77;
+    background-color: #74ce77;
+    margin: 0;
 }
-.header_div
-{
-    margin-left: 0;
-    margin-right: 0;
+
+.container {
     text-align: center;
-    padding: 0px;
+    padding: 20px;
 }
-.header_div h1
-{
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 50px;
-    margin-bottom:0px;
+
+.header_div {
+    margin-bottom: 20px;
 }
-#pic2
+
+.header_div h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+#pic2, #pic1 {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+@media (min-width: 600px) 
 {
+    #pic1
+    {
+        width: 200px;
+        height: 200px;
+        margin-left: 80px;
+        margin-top: 150px;
+        position: absolute;
+        left: 300;
+        top: -50;
+    }
+
+    #pic2
+    {
+        width: 200px;
+        height: 200px;
+        margin-right: 80px;
+        margin-top: 150px;
+        position: absolute;
+        left: 150;
+        top: 0;
+    }
+}
+
+.questions_div {
+    text-align: center;
+}
+
+.questions_div button {
     width: 250px;
-    height: 250px;
-    margin-top:100px;
-    padding:0px;
-    float: left;
-    padding: 0px;
-    margin-left: 100px ;
-}
-#pic1
-{
-    width: 250px;
-    height:250px;
-    float: left;
-    padding:0px;
-    margin-left: 100px;
-}
-.questions_div button
-{
-    width: 300px;
     height: 100px;
-    margin-right: 200px;
-    border-radius: 10px;
+    margin-right: -500px;
+    border-radius: 20px;
     background-color: #c3dfc4;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: large;
 }
-.questions_div
-{
-    float: right;
-}
-.questions_div h2
-{
+
+.questions_div h2 {
     margin-left: 125px;
 }
-.game_div
-{
-    float: left;
-    bottom: 0;
-    width: 100%;
-    padding: 100px;
+
+.game_div {
+    text-align: center;
+    padding: 20px;
 }
-.game_div img
-{
+
+.game_div img {
     width: 50px;
     height: 50px;
 }
-#road
-{
-    float: left;
+
+#piggy{
+    position: absolute;
+    bottom: 175px;
+    left: 125px;
+    margin-left: 0px;
+}
+
+#road {
     width: 80%;
     height: 50px;
 }
-#bank
-{
-    bottom: 40px;
-    right: 0;
+
+#bank {
     position: absolute;
+    bottom: 175px;
+    right: -50px;
     margin-right: 200px;
 }
