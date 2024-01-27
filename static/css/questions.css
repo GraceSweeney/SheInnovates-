@@ -1,6 +1,7 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #74ce77;
+    background: linear-gradient(to bottom, #4b854b, #c3f6c3);
+    background-attachment: fixed;
     margin: 0;
 }
 
