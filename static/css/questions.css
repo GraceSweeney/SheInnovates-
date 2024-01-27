@@ -21,28 +21,32 @@ body
 {
     width: 300px;
     height: 300px;
-    margin-left: 450px;
-    margin-top:120px;
+    margin-top:130px;
     padding:0px;
+    float: left;
+    padding: 0px;
 }
 #pic1
 {
     width: 350px;
     height: 350px;
-    float: right;
+    float: left;
     padding:0px;
-    margin-right: 300px;
+    margin-left: 50px;
 }
 .questions_div button
 {
-    width: 450px;
-    height: 200px;
-    margin-left: 50px;
+    width: 300px;
+    height: 150px;
+    margin-right: 200px;
     border-radius: 10px;
     background-color: #c3dfc4;
 }
 .questions_div
 {
     float: right;
-    margin-right: 250px;
+}
+.questions_div h1
+{
+    margin-left: 125px;
 }
