@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 repeatIncorrectQuestions();
             } else {
                 console.log("All questions answered!");
+                window.location.href = "end.html";
             }
         }
     }
