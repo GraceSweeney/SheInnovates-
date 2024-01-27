@@ -42,6 +42,7 @@ body
     margin-right: 200px;
     border-radius: 10px;
     background-color: #c3dfc4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 .questions_div
 {
@@ -71,7 +72,8 @@ body
 }
 #bank
 {
+    bottom: 40px;
     right: 0;
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    margin-right: 200px;
 }
