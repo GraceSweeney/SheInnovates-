@@ -82,17 +82,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         currentQuestionIndex++;
-
-        if (currentQuestionIndex < questions.length) {
+        if (correctAnswers ==9 ){
+            console.log("All questions answered!");
+            window.location.href = "end.html";
+        }
+        else if (currentQuestionIndex < questions.length) {
             updateQuestion();
         } else {
             if (incorrectAnswers > 0) {
                 console.log("Repeating incorrect questions...");
                 repeatIncorrectQuestions();
-            } else {
-                console.log("All questions answered!");
-                window.location.href = "end.html";
-            }
+            } 
         }
     }
 
