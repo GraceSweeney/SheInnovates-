@@ -109,11 +109,11 @@ document.addEventListener("DOMContentLoaded", function() {
         //left is set at 125
         if(correctAnswers == 1)
         {
-            var newPos = position + 200;
+            var newPos = position + 250;
         }
         else
         {
-            var newPos = position + 75;
+            var newPos = position + 125;
         }
         pig.style.left = newPos + 'px';
     }
