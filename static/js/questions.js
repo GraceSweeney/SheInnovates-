@@ -107,7 +107,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var position = parseInt(pig.style.left) || 0;
 
         //left is set at 125
-        var newPos = position + 200;
+        if(correctAnswers == 1)
+        {
+            var newPos = position + 200;
+        }
+        else
+        {
+            var newPos = position + 75;
+        }
         pig.style.left = newPos + 'px';
     }
 
