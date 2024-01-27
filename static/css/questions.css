@@ -1,1 +1,9 @@
-
+.header_div
+{
+    text-align: center;
+}
+.header_div img
+{
+    width: 300;
+    height: 300;
+}
