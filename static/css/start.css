@@ -1,4 +1,4 @@
-body
+body 
 {
     background-color: #74ce77;
     margin: 0;
@@ -6,37 +6,58 @@ body
     text-align: center;
 }
 
-button
+.container 
+{
+    padding: 20px;
+}
+
+button 
 {
     background-color: #c3dfc4;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 16px; 
-    width: 200px;
-    height: 50px; 
-    margin: 5px; 
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
     border-radius: 25px;
+    margin-top: 20px;
 }
 
-#piggy
+#piggy, #coins 
 {
-    width: 300px;
-    height: 300px;
-    margin-left: 450px;
-    margin-top:120px;
-    padding:0px;
-    position: absolute; /* Set the positioning context */
-    top: 50px; /* Move the image 50 pixels down from the top */
-    left: -400px; /* Move the image 100 pixels from the left */
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
 }
 
-#coins
+#piggy,
+#coins 
 {
-    width: 300px;
-    height: 300px;
-    margin-left: 450px;
-    margin-top:120px;
-    padding:0px;
-    position: absolute; /* Set the positioning context */
-    top: 50px; /* Move the image 50 pixels down from the top */
-    left: 400px; /* Move the image 100 pixels from the left */
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+@media (min-width: 600px) 
+{
+    #piggy 
+    {
+        width: 200px;
+        height: 200px;
+        margin-left: 80px; /* Adjust the left margin */
+        margin-top: 80px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #coins 
+    {
+        width: 200px;
+        height: 200px;
+        margin-right: 80px; /* Adjust the right margin */
+        margin-top: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
