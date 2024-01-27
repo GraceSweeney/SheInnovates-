@@ -6,14 +6,14 @@ body
     text-align: center;
 }
 
-.instructions
-{
-    font-size: 1.3em;
-}
-
 .container 
 {
     padding: 20px;
+}
+
+.winner
+{
+    font-size: 1.3em;
 }
 
 button 
@@ -38,7 +38,7 @@ button
     }
 }
 
-#piggy, #coins 
+#piggy, #bank
 {
     max-width: 100%;
     height: auto;
@@ -58,7 +58,7 @@ button
         top: 0;
     }
 
-    #coins 
+    #bank
     {
         width: 200px;
         height: 200px;
