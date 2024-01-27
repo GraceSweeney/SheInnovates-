@@ -72,9 +72,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateQuestion() {
         const currentQuestion = questions[currentQuestionIndex];
         document.getElementById("descriptions").textContent = currentQuestion.descriptions;
+        document.getElementById("descriptions").style.display = "block";
         document.getElementById("questionText").textContent = currentQuestion.question;
+        document.getElementById("questionText").style.display = "none";
         document.getElementById("option1").textContent = currentQuestion.optionA;
+        document.getElementById("option1").style.display = "none";
         document.getElementById("option2").textContent = currentQuestion.optionB;
+        document.getElementById("option2").style.display = "none";
+        document.getElementById("nextButton").style.display = "inline";
     }
 
     function showQuestions() {

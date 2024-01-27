@@ -68,10 +68,6 @@ body {
     font-size: large;
 }
 
-.questions_div h2 {
-    margin-left: 500px;
-}
-
 .game_div {
     text-align: center;
     padding: 20px;
@@ -99,4 +95,15 @@ body {
     bottom: 175px;
     right: -50px;
     margin-right: 200px;
+}
+#nextButton
+{
+    width: 250px;
+    height: 100px;
+    margin-top: 80px;
+    margin-right: -500px;
+    border-radius: 20px;
+    background-color: #c3dfc4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: large;
 }
