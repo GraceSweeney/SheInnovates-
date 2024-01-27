@@ -21,11 +21,6 @@
     <canvas id="confettiCanvas"></canvas>
 
     <script>
-        function playAgain() 
-        {
-           window.location.href = "start.html";
-        }
-
         //confetti effect
         const canvas = document.getElementById('confettiCanvas');
         const ctx = canvas.getContext('2d');
@@ -49,7 +44,12 @@
         }
 
         // Trigger confetti on page load
-        setInterval(createConfetti(), 50);
+        createConfetti();
+
+        function playAgain() 
+        {
+           window.location.href = "start.html";
+        }
 
     </script>
     
