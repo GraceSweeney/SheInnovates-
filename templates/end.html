@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/end.css">
+    <title>Congrats!</title>
+</head>
+<body>
+    <div class="container">
+        <br> <br> <br> <br>
+        <h1>You Won!</h1>
+        
+        <p class="winner"> PNC Piggy made it to the bank! </p>
+           
+        <img id="bank" src="../static/images/bank.png" alt="Bank Image">
+        <img id="piggy" src="../static/images/piggy.png" alt="Piggy Image">
+
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <script>
+        //confetti effect
+        const canvas = document.getElementById('confettiCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function createConfetti() {
+            const colors = ['#f00', '#0f0', '#00f', '#ff0', '#0ff', '#f0f'];
+            const confettiSize = 10;
+
+            for (let i = 0; i < 100; i++) {
+                ctx.beginPath();
+                ctx.arc(randomInRange(0, canvas.width), randomInRange(0, canvas.height), confettiSize, 0, 2 * Math.PI);
+                ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                ctx.fill();
+            }
+        }
+
+        // trigger confetti on page load
+        createConfetti();
+
+        function playAgain() 
+        {
+           window.location.href = "start.html";
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/start.css">
+    <title>PiggyBankers Financial Wellness Game</title>
+</head>
+<body>
+    <div class="container">
+        <br> <br> <br> <br>
+        <h1>PiggyBankers Financial Wellness Game</h1>
+    
+        <p class="instructions">Instructions:</p>
+        
+        <p>
+            Piggy needs <em>YOUR</em> help to get to the bank to <br>
+            cash out all the money he has been collecting. <br>
+            Answer financial wellness questions to move Piggy. <br>
+            Every question you answer correctly will advance <br>
+            Piggy forward on the road to the bank. <br>
+            Get Piggy to the bank to win! <br>
+        </p>
+           
+        <img id="piggy" src="../static/images/piggy.png" alt="Piggy Image">
+        <img id="coins" src="../static/images/coins.png" alt="Coins Image">
+
+        <button onclick="startGame()">START</button>
+        <br><br><br><br>
+        <h3>SheInnovates 2024 Hackathon Developed by Grace and Gabi</h3>
+    </div>
+
+    <script>
+        function startGame() 
+        {
+           window.location.href = "questions.html";
+        }
+    </script>
+</body>
+</html>

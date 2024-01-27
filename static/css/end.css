@@ -1,0 +1,79 @@
+body 
+{
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #4b854b, #c3f6c3);
+    background-attachment: fixed;
+}
+
+.container 
+{
+    padding: 20px;
+}
+
+.winner
+{
+    font-size: 1.3em;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+button 
+{
+    background-color: #c3dfc4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 0.7;
+    border-radius: 50px;
+    margin-top: 20px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash
+{
+    0% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.5;
+    }
+}
+
+#piggy, #bank
+{
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+@media (min-width: 600px) 
+{
+    #piggy 
+    {
+        width: 200px;
+        height: 200px;
+        margin-left: 80px;
+        margin-top: 150px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #bank
+    {
+        width: 200px;
+        height: 200px;
+        margin-right: 80px;
+        margin-top: 150px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
