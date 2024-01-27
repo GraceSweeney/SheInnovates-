@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 const questions = [
     {
         question: "What is one way you can practice financial wellness?",
@@ -9,17 +10,17 @@ const questions = [
 ];
 let correctAnswers = 0;
 let incorrectAnswers = 0;
-let currentQuestion = 0;
+let currentQuestionIndex = 0;
 
 function updateQuestion() {
-    const currentQuestion = questions[currentQuestion];
+    const currentQuestion = questions[currentQuestionIndex];
     document.getElementById("pic1").textContent = currentQuestion.question;
     document.getElementById("option1").textContent = currentQuestion.optionA;
     document.getElementById("option2").textContent = currentQuestion.optionB;
 }
 
 function checkAnswer(selectedOption) {
-    const currentQuestion = questions[currentQuestion];
+    const currentQuestion = questions[currentQuestionIndex];
 
     if (selectedOption === currentQuestion.correctOption) {
         console.log("Correct answer!");
@@ -29,9 +30,9 @@ function checkAnswer(selectedOption) {
         incorrectAnswers++;
     }
 
-    currentQuestion++;
+    currentQuestionIndex++;
 
-    if (currentQuestion < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         updateQuestion();
     } else {
         if (incorrectAnswers > 0) {
@@ -44,7 +45,7 @@ function checkAnswer(selectedOption) {
 }
 
 function repeatIncorrectQuestions() {
-    newQuestion = 0;
+    currentQuestionIndex = 0;
     
     // Update the question
     updateQuestion();
@@ -52,3 +53,4 @@ function repeatIncorrectQuestions() {
 
 // Initial question setup
 updateQuestion();
+});
