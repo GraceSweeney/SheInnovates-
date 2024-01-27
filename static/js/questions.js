@@ -77,6 +77,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("option2").textContent = currentQuestion.optionB;
     }
 
+    function showQuestions() {
+        document.getElementById("descriptions").style.display = "none";
+        document.getElementById("questionText").style.display = "block";
+        document.getElementById("option1").style.display = "inline";
+        document.getElementById("option2").style.display = "inline";
+        document.getElementById("nextButton").style.display = "none";
+    }
+
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[currentQuestionIndex];
 
@@ -98,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         else if (currentQuestionIndex < questions.length) {
             updateQuestion();
+            showQuestions();
         } else {
             if (incorrectAnswers > 0) {
                 console.log("Repeating incorrect questions...");
@@ -133,6 +142,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initial question setup
     updateQuestion();
 
+    document.getElementById("nextButton").addEventListener("click", function() {
+        showQuestions();  // Display the question and answer choices
+    });
     // Add event listeners to buttons
     document.getElementById("option1").addEventListener("click", function() {
         checkAnswer("A"); // Assuming "A" is the correct option for the first button
