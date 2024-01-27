@@ -17,9 +17,20 @@ button
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 1em;
     padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
+    border: 0.7;
+    border-radius: 50px;
     margin-top: 20px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash
+{
+    0% {
+        opacity: 1;
+    }
+    0% {
+        opacity: 0.5;
+    }
 }
 
 #piggy, #coins 
@@ -43,7 +54,7 @@ button
     {
         width: 200px;
         height: 200px;
-        margin-left: 80px; /* Adjust the left margin */
+        margin-left: 80px;
         margin-top: 80px;
         position: absolute;
         left: 0;
@@ -54,7 +65,7 @@ button
     {
         width: 200px;
         height: 200px;
-        margin-right: 80px; /* Adjust the right margin */
+        margin-right: 80px;
         margin-top: 80px;
         position: absolute;
         right: 0;
