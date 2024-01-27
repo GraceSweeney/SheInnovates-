@@ -18,11 +18,39 @@
         <button onclick="playAgain()">Play Again</button>
     </div>
 
+    <canvas id="confettiCanvas"></canvas>
+
     <script>
         function playAgain() 
         {
            window.location.href = "start.html";
         }
+
+        //confetti effect
+        const canvas = document.getElementById('confettiCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function randomInRange(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        function createConfetti() {
+            const colors = ['#f00', '#0f0', '#00f', '#ff0', '#0ff', '#f0f'];
+            const confettiSize = 10;
+
+            for (let i = 0; i < 100; i++) {
+                ctx.beginPath();
+                ctx.arc(randomInRange(0, canvas.width), randomInRange(0, canvas.height), confettiSize, 0, 2 * Math.PI);
+                ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+                ctx.fill();
+            }
+        }
+
+        // Trigger confetti on page load
+        setInterval(createConfetti(), 50);
+
     </script>
     
 </body>
