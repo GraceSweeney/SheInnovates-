@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         else if (currentQuestionIndex < questions.length) {
             updateQuestion();
-            showQuestions();
+            //showQuestions();
         } else {
             if (incorrectAnswers > 0) {
                 console.log("Repeating incorrect questions...");
