@@ -1,15 +1,42 @@
 body
 {
+    background-color: #74ce77;
+    margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
 }
 
 button
 {
+    background-color: #c3dfc4;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px; 
+    width: 200px;
+    height: 50px; 
+    margin: 5px; 
+    border-radius: 25px;
 }
 
-.header_div
+#piggy
 {
-    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-left: 450px;
+    margin-top:120px;
+    padding:0px;
+    position: absolute; /* Set the positioning context */
+    top: 50px; /* Move the image 50 pixels down from the top */
+    left: -400px; /* Move the image 100 pixels from the left */
+}
+
+#coins
+{
+    width: 300px;
+    height: 300px;
+    margin-left: 450px;
+    margin-top:120px;
+    padding:0px;
+    position: absolute; /* Set the positioning context */
+    top: 50px; /* Move the image 50 pixels down from the top */
+    left: 400px; /* Move the image 100 pixels from the left */
 }
