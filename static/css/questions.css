@@ -37,6 +37,13 @@ body {
         top: -50px;
     }
 
+    #questionText
+    {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+
     #pic2
     {
         width: 200px;

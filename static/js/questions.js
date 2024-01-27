@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateQuestion() {
         const currentQuestion = questions[currentQuestionIndex];
-        document.getElementById("pic1").textContent = currentQuestion.question;
+        document.getElementById("questionText").textContent = currentQuestion.question;
         document.getElementById("option1").textContent = currentQuestion.optionA;
         document.getElementById("option2").textContent = currentQuestion.optionB;
     }
