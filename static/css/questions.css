@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color:#74ce77;
 }
 .header_div
 {
@@ -31,4 +32,17 @@ body
     float: right;
     padding:0px;
     margin-right: 300px;
+}
+.questions_div button
+{
+    width: 450px;
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: #c3dfc4;
+}
+.questions_div
+{
+    float: right;
+    margin-right: 250px;
 }
