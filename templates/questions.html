@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/questions.css">
+    <script type="text/javascript" src="../static/js/questions.js"></script>
     <title>Questions</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
         <img id = pic1 src="../static/images/speech.png" alt="">
         <br>
         <div class="questions_div">
-            <button>Option 1</button><br>
+            <button id="option1" onclick = "checkAnswer('A')">Option 1</button><br>
             <h2>OR</h2>
-            <button>Option 2</button>
+            <button id="option2" onclick = "checkAnswer('B')">Option 2</button>
         </div>
     </div>
     
