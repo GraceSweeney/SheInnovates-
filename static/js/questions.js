@@ -13,7 +13,7 @@ let currentQuestion = 0;
 
 function updateQuestion() {
     const currentQuestion = questions[currentQuestion];
-    document.getElementById("pic1").textContent = currentQuestion.question;
+    document.getElementById("pic1").textContent = currentQuestion.question; //speech
     document.getElementById("option1").textContent = currentQuestion.optionA;
     document.getElementById("option2").textContent = currentQuestion.optionB;
 }
@@ -37,6 +37,7 @@ function checkAnswer(selectedOption) {
         if (incorrectAnswers > 0) {
             console.log("Repeating incorrect questions...");
             repeatIncorrectQuestions();
+            incorrectAnswers = 0;
         } else {
             console.log("All questions answered!");
         }
