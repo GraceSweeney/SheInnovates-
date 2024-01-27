@@ -92,17 +92,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function checkAnswer(selectedOption) {
         const currentQuestion = questions[currentQuestionIndex];
+        const answerButtonA = document.getElementById("option1");
+        const answerButtonB = document.getElementById("option2");
 
-        if (selectedOption === currentQuestion.correctOption) {
+        if (selectedOption === currentQuestion.correctOption) 
+        {
             console.log("Correct answer!");
             correctAnswers++;
             //move the piggy forward
             moveForward();
-        } else {
+            if (selectedOption === "A") {
+                answerButtonA.style.backgroundColor = 'green';
+                answerButtonB.style.backgroundColor = ''; // reset the other button's color
+            } else if (selectedOption === "B") {
+                answerButtonA.style.backgroundColor = ''; // reset the other button's color
+                answerButtonB.style.backgroundColor = 'green';
+            }
+        } 
+        else 
+        {
             console.log("Incorrect answer!");
             incorrectAnswers++;
             //do not move forward
+            if (selectedOption === "A") {
+                answerButtonA.style.backgroundColor = 'red';
+                answerButtonB.style.backgroundColor = ''; 
+            } 
+            else if (selectedOption === "B") {
+                answerButtonA.style.backgroundColor = '';
+                answerButtonB.style.backgroundColor = 'red';
+            }
         }
+
+        answerButtonA.disabled = true;
+        answerButtonB.disabled = true;
+
+        setTimeout(() => {
+            answerButtonA.style.backgroundColor = ''; // reset button A color
+            answerButtonB.style.backgroundColor = ''; // reset button B color
+            answerButtonA.disabled = false; // enable button A again
+            answerButtonB.disabled = false; // enable button B again
+    
 
         currentQuestionIndex++;
         if (correctAnswers ==9 ){
@@ -118,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 repeatIncorrectQuestions();
             } 
         }
+        }, 1000);
     }
 
     function moveForward()
