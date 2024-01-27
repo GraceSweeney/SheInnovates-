@@ -19,25 +19,26 @@ body
 }
 #pic2
 {
-    width: 300px;
-    height: 300px;
-    margin-top:130px;
+    width: 250px;
+    height: 250px;
+    margin-top:100px;
     padding:0px;
     float: left;
     padding: 0px;
+    margin-left: 100px ;
 }
 #pic1
 {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height:250px;
     float: left;
     padding:0px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .questions_div button
 {
     width: 300px;
-    height: 150px;
+    height: 100px;
     margin-right: 200px;
     border-radius: 10px;
     background-color: #c3dfc4;
@@ -49,4 +50,22 @@ body
 .questions_div h2
 {
     margin-left: 125px;
+}
+.game_div
+{
+    float: left;
+    bottom: 0;
+    width: 100%;
+    padding: 100px;
+}
+.game_div img
+{
+    width: 50px;
+    height: 50px;
+}
+#road
+{
+    float: left;
+    width: 80%;
+    height: 50px;
 }
