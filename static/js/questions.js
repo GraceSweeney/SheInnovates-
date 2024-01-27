@@ -13,8 +13,13 @@ let incorrectAnswers = 0;
 let currentQuestionIndex = 0;
 
 function updateQuestion() {
+<<<<<<< HEAD
     const currentQuestion = questions[currentQuestionIndex];
     document.getElementById("pic1").textContent = currentQuestion.question;
+=======
+    const currentQuestion = questions[currentQuestion];
+    document.getElementById("pic1").textContent = currentQuestion.question; //speech
+>>>>>>> 8db591b301b6428b0f652c403169a490eb540bd3
     document.getElementById("option1").textContent = currentQuestion.optionA;
     document.getElementById("option2").textContent = currentQuestion.optionB;
 }
@@ -38,6 +43,7 @@ function checkAnswer(selectedOption) {
         if (incorrectAnswers > 0) {
             console.log("Repeating incorrect questions...");
             repeatIncorrectQuestions();
+            incorrectAnswers = 0;
         } else {
             console.log("All questions answered!");
         }
