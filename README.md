@@ -9,4 +9,4 @@ closer to the bank. After all questions are answered,
 there is an option to retry incorrect questions. 
 
 The game ends when the Piggy reaches the bank and all
-questions have been answered correctly!
+questions have been answered correctly.
