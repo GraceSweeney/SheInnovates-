@@ -25,9 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (selectedOption === currentQuestion.correctOption) {
             console.log("Correct answer!");
             correctAnswers++;
+            //move the piggy forward
+            moveForward();
         } else {
             console.log("Incorrect answer!");
             incorrectAnswers++;
+            //do not move forward
         }
 
         currentQuestionIndex++;
@@ -42,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("All questions answered!");
             }
         }
+    }
+
+    function moveForward()
+    {
+        var pig = document.getElementById('piggy');
+        var position = parseInt(pig.style.left) || 0;
+
+        var newPos = position + 10;
+        pig.style.left = newPos + 'px';
     }
 
     function repeatIncorrectQuestions() {

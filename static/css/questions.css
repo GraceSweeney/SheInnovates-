@@ -33,8 +33,8 @@ body {
         margin-left: 80px;
         margin-top: 150px;
         position: absolute;
-        left: 300;
-        top: -50;
+        left: 300px;
+        top: -50px;
     }
 
     #pic2
@@ -44,7 +44,7 @@ body {
         margin-right: 80px;
         margin-top: 150px;
         position: absolute;
-        left: 150;
+        left: 150px;
         top: 0;
     }
 }
