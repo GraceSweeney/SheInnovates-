@@ -13,12 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
             correctOption: "B"
         },
         {
-            question: "Being financially well also means understanding the joy of sharing. Sharing is when you use some of your money to help others or contribute to your community. It could be donating to a charity, helping a friend in need, or supporting a local cause. When we share, we create a positive impact on the world around us. If you have $5, what could you do to practice sharing?",
-            optionA: "keep it all for yourself",
-            optionB: "use part of it to buy a small gift for a friend or donate to a charity",
-            correctOption: "B"
-        },
-        {
             question: "Earning money is like completing challenges or tasks, such as doing chores or helping out. Once you've earned some money, you can choose how to spend it wisely. It's important to think about your needs and wants. Needs are things you must have, like food and clothes, while wants are things you would like to have, like toys or treats. If you earn $5 by helping with chores, what's a smart way to spend it? ",
             optionA: "using it to buy some school supplies you need",
             optionB: "buying a new video game",
