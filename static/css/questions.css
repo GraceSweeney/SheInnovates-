@@ -29,8 +29,9 @@ body {
     #questionText
     {
         position: absolute;
-        top: 25%;
-        left: 25%;
+        top: 20%;
+        left: 27%;
+        right: 50%;
     }
 
     #pic2
@@ -60,7 +61,7 @@ body {
 }
 
 .questions_div h2 {
-    margin-left: 125px;
+    margin-left: 500px;
 }
 
 .game_div {
